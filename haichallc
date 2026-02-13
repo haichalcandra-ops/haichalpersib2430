@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Persib Bandung - Pride of Bandung</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f9;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(90deg, #0033a0, #0057e7);
+    }
+
+    .navbar-brand {
+      letter-spacing: 1px;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+      url('p.webp');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    /* Section Title */
+    .section-title {
+      font-weight: bold;
+      color: #0033a0;
+      margin-bottom: 30px;
+    }
+
+    /* Card */
+    .card {
+      border-radius: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    /* Stats */
+    .stats {
+      background: linear-gradient(90deg, #0033a0, #0057e7);
+      color: white;
+    }
+
+    .stats h2 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    /* Gallery */
+    #gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: 0.3s ease;
+    }
+
+    #gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #001f5c;
+      color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .hero h1 {
+        font-size: 2.3rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        min-height: 70vh;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .card img {
+        height: 200px;
+      }
+
+      #gallery img {
+        height: 150px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+
+      .stats h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">PERSIB BANDUNG</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#players">Players</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="container">
+    <h1>PRIDE OF BANDUNG</h1>
+    <p class="lead mt-3">Semangat Biru. Loyalitas Tanpa Batas.</p>
+    <a href="#about" class="btn btn-light btn-lg mt-4 px-4">Explore More</a>
+  </div>
+</section>
+
+<!-- About -->
+<section class="py-5" id="about">
+  <div class="container">
+    <h2 class="text-center section-title">Tentang Persib</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="p.webp" class="img-fluid rounded shadow w-100">
+      </div>
+      <div class="col-md-6">
+        <p class="fs-5">
+          Persib Bandung adalah klub sepak bola profesional Indonesia yang berbasis di Bandung, Jawa Barat.
+          Dikenal dengan julukan Maung Bandung dan didukung oleh suporter fanatik Bobotoh.
+        </p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Didirikan: 1933</li>
+          <li class="list-group-item">Stadion: Stadion Gelora Bandung Lautan Api</li>
+          <li class="list-group-item">Warna Kebanggaan: Biru</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="stats text-center py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <h2>4</h2>
+        <p>Gelar Liga Indonesia</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h2>90+</h2>
+        <p>Tahun Sejarah</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h2>Jutaan</h2>
+        <p>Bobotoh Loyal</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Players -->
+<section class="py-5" id="players">
+  <div class="container">
+    <h2 class="text-center section-title">Pemain Unggulan</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow border-0">
+          <img src="2.jpeg" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Kapten Tim</h5>
+            <p class="card-text">Pemimpin lapangan dengan semangat juang tinggi.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow border-0">
+          <img src="ff.jpeg" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Striker Andal</h5>
+            <p class="card-text">Pencetak gol dengan insting tajam.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow border-0">
+          <img src="f.jpeg" class="card-img-top">
+          <div class="card-body text-center">
+            <h5 class="card-title">Kiper Tangguh</h5>
+            <p class="card-text">Benteng terakhir pertahanan tim.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="py-5 bg-light" id="gallery">
+  <div class="container">
+    <h2 class="text-center section-title">Gallery</h2>
+    <div class="row g-3">
+      <div class="col-6 col-md-3"><img src="1.jpg" class="img-fluid"></div>
+      <div class="col-6 col-md-3"><img src="22.jpeg" class="img-fluid"></div>
+      <div class="col-6 col-md-3"><img src="3.jpeg" class="img-fluid"></div>
+      <div class="col-6 col-md-3"><img src="4.jpeg" class="img-fluid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="py-5" id="contact">
+  <div class="container">
+    <h2 class="text-center section-title">Hubungi Kami</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Nama</label>
+            <input type="text" class="form-control" placeholder="Nama Anda">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Email Anda">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Pesan</label>
+            <textarea class="form-control" rows="4" placeholder="Tulis pesan..."></textarea>
+          </div>
+          <a href="https://wa.me/6281646982874" target="_blank"></a><button class="btn btn-primary w-100">Kirim Pesan</button></a>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-4">
+  <div class="container">
+    <p>© 2026 Persib Bandung | Dibuat dengan semangat Biru 💙</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
